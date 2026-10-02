@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bijal Prajapati · Cloud & Data Engineer</title>
+<meta name="description" content="Bijal Prajapati – Cloud Full Stack Engineer & Data Engineer in Germany. AWS Serverless, Azure Databricks, PySpark, TypeScript, Python.">
+<meta property="og:title" content="Bijal Prajapati · Cloud & Data Engineer">
+<meta property="og:description" content="10+ years in software. Serverless backends on AWS and large-scale data platforms on Azure.">
+<meta property="og:image" content="bijal.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%2314b8a6'/><text x='50%' y='56%' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle' dominant-baseline='middle'>BP</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0f1a;--bg2:#0f1726;--card:#111a2b;--line:#1f2a40;--tx:#e6ecf5;--mu:#94a3b8;--a:#14b8a6;--b:#8b5cf6;--c:#f59e0b;--glow:rgba(20,184,166,.18)}
+[data-theme=light]{--bg:#f7f8fb;--bg2:#eef1f6;--card:#fff;--line:#e2e8f0;--tx:#0f172a;--mu:#526079;--glow:rgba(20,184,166,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.bgfx{position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 85% 10%,rgba(139,92,246,.16),transparent 60%),radial-gradient(700px 500px at 0% 40%,var(--glow),transparent 60%)}
+.grid-bg{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at top,#000 20%,transparent 70%);opacity:.35}
+/* nav */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700}
+.logo span.m{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font-size:14px}
+.links{display:flex;gap:22px;font-size:14px;color:var(--mu)}
+.links a:hover{color:var(--tx)}
+.tools{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--tx);transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--a)}
+.btn.p{background:linear-gradient(135deg,var(--a),#0ea5e9);color:#fff;border:0}
+.ic{width:38px;height:38px;padding:0;justify-content:center;font-size:12px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:72px 0 56px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mu);display:flex;align-items:center;gap:7px}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+h1{font-size:clamp(38px,5.4vw,64px);line-height:1.05;letter-spacing:-.03em;font-weight:800}
+.g1{background:linear-gradient(90deg,var(--a),#38bdf8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g2{background:linear-gradient(90deg,var(--c),#f97316);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mu);font-size:17px;margin:22px 0 28px;max-width:560px}
+.lead b{color:var(--tx)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.typed{font-family:'JetBrains Mono',monospace;color:var(--a);font-size:14px;margin-top:22px;min-height:22px}
+.typed::after{content:'▍';animation:blink 1s infinite}
+@keyframes blink{50%{opacity:0}}
+/* photo orbit */
+.orbit{position:relative;aspect-ratio:1;max-width:420px;margin:auto;width:100%}
+.ring{position:absolute;inset:0;border-radius:50%;border:1px dashed var(--line)}
+.ring.r2{inset:13%;border-style:solid;border-color:color-mix(in srgb,var(--a) 35%,transparent)}
+.spin{animation:spin 40s linear infinite}
+.spin.rev{animation-direction:reverse;animation-duration:30s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo{position:absolute;inset:26%;border-radius:50%;overflow:hidden;border:3px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(135deg,var(--a),var(--b),var(--c)) border-box;box-shadow:0 20px 60px rgba(20,184,166,.25)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;font-size:12px;font-weight:600;padding:7px 12px;border-radius:12px;background:var(--card);border:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.2);white-space:nowrap}
+.spin .badge{animation:spin 40s linear infinite reverse}
+.spin.rev .badge{animation:spin 30s linear infinite}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:80px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.stat b{font-size:34px;font-weight:800;display:block;letter-spacing:-.02em}
+.stat span{color:var(--mu);font-size:13.5px}
+section{padding:40px 0 70px}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--a);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(28px,3.4vw,40px);letter-spacing:-.02em;margin:8px 0 12px;line-height:1.15}
+.sub{color:var(--mu);max-width:640px;margin-bottom:34px}
+/* pipeline */
+.pipe{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;overflow:hidden}
+.tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.tab{padding:8px 16px;border-radius:999px;border:1px solid var(--line);cursor:pointer;font-size:13.5px;font-weight:600;color:var(--mu);background:transparent}
+.tab.on{background:var(--a);color:#fff;border-color:var(--a)}
+.flow{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding-bottom:6px}
+.node{flex:1;min-width:150px;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:16px;position:relative}
+.node h4{font-size:14px;margin-bottom:4px}
+.node p{font-size:12.5px;color:var(--mu)}
+.node .k{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--a);margin-bottom:8px}
+.arrow{width:46px;min-width:46px;position:relative;align-self:center;height:2px;background:var(--line)}
+.arrow::after{content:'';position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 10px var(--a);animation:move 1.6s linear infinite}
+@keyframes move{from{left:0}to{left:38px}}
+.pipe-note{margin-top:18px;font-size:13.5px;color:var(--mu)}
+/* timeline */
+.tl{position:relative;padding-left:28px}
+.tl::before{content:'';position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--a),var(--b),transparent)}
+.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-bottom:16px;transition:.25s}
+.job:hover{border-color:color-mix(in srgb,var(--a) 50%,var(--line));transform:translateX(4px)}
+.job::before{content:'';position:absolute;left:-27px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--a)}
+.jh{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.jh h3{font-size:18px}
+.co{color:var(--a);font-weight:600;font-size:14.5px}
+.when{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--mu)}
+.job ul{margin:12px 0 0 18px;color:var(--mu);font-size:14.5px}
+.job li{margin:4px 0}
+.job details summary{cursor:pointer;color:var(--a);font-size:13.5px;margin-top:10px;font-weight:600;list-style:none}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:12px;padding:4px 10px;border-radius:8px;background:var(--bg2);border:1px solid var(--line);color:var(--mu)}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.skc h4{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:15.5px}
+.skc h4 i{font-style:normal;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:var(--bg2);font-size:16px}
+/* edu + lang */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h4{font-size:16px}
+.card .co{display:block;margin:4px 0}
+.bar{height:8px;border-radius:99px;background:var(--bg2);margin:6px 0 14px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--a),var(--b));width:0;transition:width 1.4s ease}
+.row{display:flex;justify-content:space-between;font-size:14px}
+/* contact */
+.contact{background:linear-gradient(135deg,color-mix(in srgb,var(--a) 18%,var(--card)),color-mix(in srgb,var(--b) 18%,var(--card)));border:1px solid var(--line);border-radius:26px;padding:48px;text-align:center}
+.contact p{color:var(--mu);max-width:560px;margin:0 auto 26px}
+.facts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+footer{padding:30px 0;text-align:center;color:var(--mu);font-size:13px;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:40px}.orbit{max-width:320px}.stats{grid-template-columns:repeat(2,1fr)}.sk{grid-template-columns:1fr 1fr}.links{display:none}.two{grid-template-columns:1fr}}
+@media(max-width:560px){.orbit{max-width:240px}.sk{grid-template-columns:1fr}.contact{padding:30px 20px}.badge{font-size:10.5px;padding:5px 8px}.btn.hide-sm{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="bgfx"></div><div class="grid-bg"></div>
+
+<nav><div class="wrap">
+  <a href="#top" class="logo"><span class="m">BP</span>Bijal Prajapati</a>
+  <div class="links">
+    <a href="#pipeline" data-i18n="n1">What I build</a>
+    <a href="#experience" data-i18n="n2">Experience</a>
+    <a href="#skills" data-i18n="n3">Skills</a>
+    <a href="#education" data-i18n="n4">Education</a>
+  </div>
+  <div class="tools">
+    <button class="btn ic" id="lang" title="Deutsch / English">DE</button>
+    <button class="btn ic" id="theme" title="Theme">☀</button>
+    <a class="btn p hide-sm" href="#contact" data-i18n="n5">Contact me</a>
+  </div>
+</div></nav>
+
+<main id="top" class="wrap">
+<header class="hero">
+  <div>
+    <div class="chips">
+      <span class="chip"><span class="dot"></span><span data-i18n="c1">Open to Cloud & Data Engineering roles</span></span>
+      <span class="chip">🇩🇪 <span data-i18n="c2">Permanent residence · no visa needed</span></span>
+      <span class="chip">🎓 <span data-i18n="c3">M.Sc. Data Science · German B1</span></span>
+    </div>
+    <h1><span data-i18n="h1a">Hi, I'm Bijal.</span><br><span data-i18n="h1b">I build</span> <span class="g1" data-i18n="h1c">cloud backends</span><br><span data-i18n="h1d">and</span> <span class="g2" data-i18n="h1e">data platforms.</span></h1>
+    <p class="lead" data-i18n="lead">Cloud Full Stack Engineer & Data Engineer with <b>10+ years</b> in software, including <b>5+ years in Germany</b>. I design <b>serverless backends on AWS</b> and <b>large-scale data platforms on Azure Databricks</b> – and turn business requirements into reliable, production-grade systems.</p>
+    <div class="cta">
+      <a class="btn p" href="#contact" data-i18n="b1">Let's talk →</a>
+      <a class="btn" href="https://www.linkedin.com/in/bijal-prajapati-962248100" target="_blank" rel="noopener">in LinkedIn</a>
+      <a class="btn" href="#experience" data-i18n="b2">See experience</a>
+    </div>
+    <div class="typed" id="typed"></div>
+  </div>
+  <div class="orbit">
+    <div class="ring spin">
+      <span class="badge" style="top:-4%;left:42%">☁️ AWS Lambda</span>
+      <span class="badge" style="bottom:4%;left:8%">⚡ PySpark</span>
+      <span class="badge" style="top:40%;right:-8%">🔷 Azure</span>
+    </div>
+    <div class="ring r2 spin rev">
+      <span class="badge" style="top:8%;left:-4%">🧱 Databricks</span>
+      <span class="badge" style="bottom:-2%;right:18%">TS TypeScript</span>
+      <span class="badge" style="top:46%;left:-14%">🐍 Python</span>
+    </div>
+    <div class="photo"><img src="bijal.jpg" alt="Bijal Prajapati"></div>
+  </div>
+</header>
+
+<div class="stats reveal">
+  <div class="stat"><b data-count="10">0</b><span data-i18n="s1">+ years in software</span></div>
+  <div class="stat"><b data-count="5">0</b><span data-i18n="s2">+ years cloud-native in Germany</span></div>
+  <div class="stat"><b>2</b><span data-i18n="s3">clouds in production: AWS & Azure</span></div>
+  <div class="stat"><b>M.Sc.</b><span data-i18n="s4">Data Science, Germany</span></div>
+</div>
+
+<section id="pipeline" class="reveal">
+  <div class="eyebrow" data-i18n="e1">01 · What I build</div>
+  <h2 data-i18n="t1">Two kinds of systems. Both in production.</h2>
+  <p class="sub" data-i18n="p1">Pick one to see how a typical architecture of mine flows – from the first request or raw event to something the business can use.</p>
+  <div class="pipe">
+    <div class="tabs">
+      <button class="tab on" data-p="aws">☁️ AWS Serverless</button>
+      <button class="tab" data-p="az">🔷 Azure Data Platform</button>
+    </div>
+    <div class="flow" id="flow"></div>
+    <p class="pipe-note" id="pnote"></p>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <div class="eyebrow" data-i18n="e2">02 · Experience</div>
+  <h2 data-i18n="t2">10+ years, from PHP backends to cloud data platforms.</h2>
+  <p class="sub" data-i18n="p2">Career path from India to Germany – each step closer to cloud and data.</p>
+  <div class="tl">
+    <div class="job">
+      <div class="jh"><div><h3>Cloud Full Stack Engineer</h3><div class="co">DYN Media · Cologne (Hybrid)</div></div><div class="when">11/2024 – <span data-i18n="now">Present</span></div></div>
+      <ul>
+        <li>Designed serverless cloud architectures on AWS for scalability and high availability.</li>
+        <li>Built microservices with AWS Lambda (Node.js/TypeScript) behind API Gateway (REST) with request validation and dev/staging/prod deployments.</li>
+        <li>Secured APIs with OAuth 2.0 / JWT using Lambda authorizers and role-based access.</li>
+        <li>Built event-driven pipelines with SQS-triggered Lambdas, batching, retries and dead-letter queues.</li>
+      </ul>
+      <details><summary data-i18n="more">+ Show more</summary><ul>
+        <li>Designed DynamoDB schemas around access patterns: composite keys, GSIs, conditional writes.</li>
+        <li>Secure S3 workflows: pre-signed URLs, event-triggered processing, encryption, versioning, lifecycle rules, least-privilege policies.</li>
+        <li>Optimised ingestion and storage in S3-based data lakes; AWS Glue ETL jobs in Python from DynamoDB to S3.</li>
+        <li>Infrastructure as code with AWS CDK and CloudFormation; monitoring with CloudWatch.</li>
+      </ul></details>
+      <div class="tags"><span class="tag">Lambda</span><span class="tag">API Gateway</span><span class="tag">DynamoDB</span><span class="tag">SQS</span><span class="tag">S3</span><span class="tag">Glue</span><span class="tag">CDK</span><span class="tag">TypeScript</span></div>
+    </div>
+    <div class="job">
+      <div class="jh"><div><h3>Software Developer & Data Engineer</h3><div class="co">pferdewetten.de AG · Düsseldorf</div></div><div class="when">03/2021 – 10/2024</div></div>
+      <ul>
+        <li>Built scalable ETL pipelines with Azure Databricks and PySpark for analytics and reporting.</li>
+        <li>Designed Delta Lake architecture on Azure Data Lake, improving reliability, consistency and query performance.</li>
+        <li>Implemented real-time and batch ingestion with Azure Event Hub and Data Factory, orchestrated via Databricks Workflows.</li>
+        <li>Led data modeling and schema design; tuned complex SQL to cut query execution time.</li>
+      </ul>
+      <details><summary data-i18n="more">+ Show more</summary><ul>
+        <li>Built CI/CD pipelines (GitLab, YAML) for automated, version-controlled data platform deployments.</li>
+        <li>Developed scalable Python and PySpark applications for large-scale data processing.</li>
+        <li>Turned business requirements into data solutions with cross-functional teams; contributed backend REST APIs (PHP, MySQL/MariaDB).</li>
+      </ul></details>
+      <div class="tags"><span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">Delta Lake</span><span class="tag">Data Factory</span><span class="tag">Event Hub</span><span class="tag">GitLab CI</span><span class="tag">SQL</span></div>
+    </div>
+    <div class="job">
+      <div class="jh"><div><h3>Full Stack Developer (PHP)</h3><div class="co">Webflare Solutions · Ahmedabad, India</div></div><div class="when">02/2017 – 11/2018</div></div>
+      <ul><li>Developed backend systems and REST APIs in PHP and MySQL for web and mobile applications.</li><li>Designed and optimized database-driven applications; supported the full SDLC.</li></ul>
+    </div>
+    <div class="job">
+      <div class="jh"><div><h3>Full Stack Developer (PHP)</h3><div class="co">Prismetric Technologies · Gujarat, India</div></div><div class="when">04/2016 – 01/2017</div></div>
+      <ul><li>Built and maintained client web applications and backend services in PHP and MySQL.</li></ul>
+    </div>
+    <div class="job">
+      <div class="jh"><div><h3>Software Developer</h3><div class="co">HK Infosoft · Ahmedabad, India</div></div><div class="when">04/2014 – 03/2016</div></div>
+      <ul><li>Developed backend systems and APIs; optimized queries and application logic for performance.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="eyebrow" data-i18n="e3">03 · Skills</div>
+  <h2 data-i18n="t3">The toolbox.</h2>
+  <p class="sub" data-i18n="p3">Data engineering, serverless and event-driven architecture, batch & streaming, CI/CD & DataOps.</p>
+  <div class="sk">
+    <div class="skc"><h4><i>☁️</i>AWS</h4><div class="tags"><span class="tag">Lambda</span><span class="tag">API Gateway</span><span class="tag">DynamoDB</span><span class="tag">SQS</span><span class="tag">S3</span><span class="tag">Glue</span><span class="tag">EC2</span><span class="tag">VPC</span><span class="tag">CloudWatch</span><span class="tag">CDK</span><span class="tag">CloudFormation</span></div></div>
+    <div class="skc"><h4><i>🔷</i>Azure & Big Data</h4><div class="tags"><span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">Apache Spark</span><span class="tag">Delta Lake</span><span class="tag">Data Factory</span><span class="tag">Event Hub</span><span class="tag">Synapse</span><span class="tag">Data Lake</span></div></div>
+    <div class="skc"><h4><i>⌨️</i>Programming</h4><div class="tags"><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">JavaScript</span><span class="tag">React.js</span><span class="tag">PHP</span></div></div>
+    <div class="skc"><h4><i>🗄️</i>Databases</h4><div class="tags"><span class="tag">DynamoDB</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MariaDB</span></div></div>
+    <div class="skc"><h4><i>🔧</i>DevOps & Tools</h4><div class="tags"><span class="tag">GitLab CI/CD</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Databricks Workflows</span><span class="tag">YAML</span></div></div>
+    <div class="skc"><h4><i>🧩</i>Other</h4><div class="tags"><span class="tag">OAuth 2.0 / JWT</span><span class="tag">REST APIs</span><span class="tag">Event-driven</span><span class="tag">Data Modeling</span><span class="tag">Power BI</span></div></div>
+  </div>
+</section>
+
+<section id="education" class="reveal">
+  <div class="eyebrow" data-i18n="e4">04 · Education & Languages</div>
+  <h2 data-i18n="t4">Trained in Germany. Working in English & German.</h2>
+  <div class="two" style="margin-top:28px">
+    <div class="card">
+      <h4>Master of Data Science (Computer Science)</h4><span class="co">Rhine-Waal University of Applied Sciences, Germany</span><span class="when">2019 – 2021</span>
+      <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+      <h4>B.E. Information Technology</h4><span class="co">Gujarat Technological University, India</span><span class="when">2009 – 2013</span>
+      <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+      <h4>Python Data Science Toolbox</h4><span class="co">DataCamp · Certification</span>
+    </div>
+    <div class="card">
+      <div class="row"><b>English</b><span>C1 · Fluent</span></div><div class="bar"><i data-w="88"></i></div>
+      <div class="row"><b>Deutsch</b><span>B1 · telc certified → B2</span></div><div class="bar"><i data-w="55"></i></div>
+      <p style="color:var(--mu);font-size:14px;margin-top:8px" data-i18n="res">📍 Mülheim an der Ruhr · Niederlassungserlaubnis (permanent residence) · Notice period: 3 months</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="contact">
+    <div class="eyebrow" data-i18n="e5">05 · Contact</div>
+    <h2 data-i18n="t5">Building something on AWS or Azure?</h2>
+    <p data-i18n="p5">I'm open to Cloud Engineer, Data Engineer and Full Stack roles in NRW or remote in Germany. Happy to hear from you.</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn p" href="mailto:bijalprajapati9898@gmail.com">✉ bijalprajapati9898@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/bijal-prajapati-962248100" target="_blank" rel="noopener">in LinkedIn</a>
+      <a class="btn" href="https://www.xing.com/profile/BIJAL_PRAJAPATI" target="_blank" rel="noopener">XING</a>
+      <a class="btn" href="https://github.com/BijalPrajapati" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="facts"><span class="chip">🇩🇪 No sponsorship needed</span><span class="chip">⏳ 3 months notice</span><span class="chip">📍 NRW · Hybrid / Remote</span></div>
+  </div>
+</section>
+</main>
+<footer>© <span id="y"></span> Bijal Prajapati · Cloud & Data Engineer</footer>
+
+<script>
+const P={aws:{n:[["01 · CLIENT","Web / Mobile","Requests with OAuth 2.0 / JWT"],["02 · API","API Gateway","REST, validation, Lambda authorizer"],["03 · COMPUTE","AWS Lambda","Node.js / TypeScript microservices"],["04 · EVENTS","SQS","Batching, retries, dead-letter queues"],["05 · STORE","DynamoDB + S3","Access-pattern design, data lake → Glue"]],t:"Deployed with AWS CDK & CloudFormation across dev/staging/prod, monitored in CloudWatch. Built at DYN Media."},
+az:{n:[["01 · SOURCES","Event Hub / ADF","Real-time & batch ingestion"],["02 · BRONZE","Raw Delta","Landing in Azure Data Lake"],["03 · SILVER","PySpark ETL","Clean, join, validate on Databricks"],["04 · GOLD","Delta Lake","Modeled, tuned SQL for reporting"],["05 · SERVE","Analytics / BI","Power BI & reporting use cases"]],t:"Orchestrated with Databricks Workflows, shipped with GitLab CI/CD. Built at pferdewetten.de AG."}};
+function draw(k){const f=document.getElementById('flow');f.innerHTML=P[k].n.map((n,i)=>(i?'<div class="arrow"></div>':'')+`<div class="node"><div class="k">${n[0]}</div><h4>${n[1]}</h4><p>${n[2]}</p></div>`).join('');document.getElementById('pnote').textContent=P[k].t}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw(b.dataset.p)});draw('aws');
+// typing
+const words=["aws lambda deploy --stage prod ✓","spark.read.format('delta') …","dynamodb: GSI query in 12ms ✓","databricks workflow: gold layer refreshed ✓"];let wi=0,ci=0,del=false;
+(function type(){const el=document.getElementById('typed'),w=words[wi];el.textContent='$ '+w.slice(0,ci);if(!del&&ci<w.length)ci++;else if(del&&ci>0)ci--;else if(!del){del=true;return setTimeout(type,1600)}else{del=false;wi=(wi+1)%words.length}setTimeout(type,del?25:55)})();
+// reveal + counters + bars
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(c=>{let n=0,t=+c.dataset.count;const s=setInterval(()=>{c.textContent=++n;if(n>=t)clearInterval(s)},90)});e.target.querySelectorAll('.bar i').forEach(b=>b.style.width=b.dataset.w+'%');io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+document.getElementById('y').textContent=new Date().getFullYear();
+// theme
+const root=document.documentElement,th=document.getElementById('theme');
+function setT(t){root.dataset.theme=t;th.textContent=t==='dark'?'☀':'☾';try{localStorage.setItem('t',t)}catch(e){}}
+try{setT(localStorage.getItem('t')||'dark')}catch(e){}
+th.onclick=()=>setT(root.dataset.theme==='dark'?'light':'dark');
+// i18n
+const DE={n1:"Was ich baue",n2:"Erfahrung",n3:"Skills",n4:"Ausbildung",n5:"Kontakt",c1:"Offen für Cloud- & Data-Engineering-Rollen",c2:"Niederlassungserlaubnis · kein Visum nötig",c3:"M.Sc. Data Science · Deutsch B1",h1a:"Hallo, ich bin Bijal.",h1b:"Ich baue",h1c:"Cloud-Backends",h1d:"und",h1e:"Datenplattformen.",lead:"Cloud Full Stack Engineer & Data Engineer mit <b>10+ Jahren</b> Softwareentwicklung, davon <b>5+ Jahre in Deutschland</b>. Ich entwerfe <b>Serverless-Backends auf AWS</b> und <b>skalierbare Datenplattformen mit Azure Databricks</b> – und mache aus Anforderungen zuverlässige Produktivsysteme.",b1:"Lass uns sprechen →",b2:"Erfahrung ansehen",s1:"+ Jahre Softwareentwicklung",s2:"+ Jahre Cloud in Deutschland",s3:"Clouds produktiv: AWS & Azure",s4:"Data Science, Deutschland",e1:"01 · Was ich baue",t1:"Zwei Arten von Systemen. Beide produktiv.",p1:"Wähle eine Architektur und sieh, wie Daten vom ersten Request oder Event bis zum Business-Nutzen fließen.",e2:"02 · Erfahrung",t2:"10+ Jahre – von PHP-Backends zu Cloud-Datenplattformen.",p2:"Mein Weg von Indien nach Deutschland – jeder Schritt näher an Cloud und Daten.",now:"heute",more:"+ Mehr anzeigen",e3:"03 · Skills",t3:"Der Werkzeugkasten.",p3:"Data Engineering, Serverless & Event-driven, Batch & Streaming, CI/CD & DataOps.",e4:"04 · Ausbildung & Sprachen",t4:"In Deutschland ausgebildet. Arbeite auf Englisch & Deutsch.",native:"Muttersprache",res:"📍 Mülheim an der Ruhr · Niederlassungserlaubnis · Kündigungsfrist: 3 Monate",e5:"05 · Kontakt",t5:"Sie bauen etwas auf AWS oder Azure?",p5:"Ich bin offen für Rollen als Cloud Engineer, Data Engineer oder Full Stack Engineer in NRW oder remote in Deutschland."};
+const EN={};document.querySelectorAll('[data-i18n]').forEach(e=>EN[e.dataset.i18n]=e.innerHTML);
+let lang='en';const lb=document.getElementById('lang');
+lb.onclick=()=>{lang=lang==='en'?'de':'en';const d=lang==='de'?DE:EN;document.querySelectorAll('[data-i18n]').forEach(e=>{if(d[e.dataset.i18n])e.innerHTML=d[e.dataset.i18n]});lb.textContent=lang==='en'?'DE':'EN';root.lang=lang};
+</script>
+</body>
+</html>
